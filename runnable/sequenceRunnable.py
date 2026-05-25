@@ -46,6 +46,7 @@ parser = StrOutputParser()
 
 # Instead of manually invoking will run as runnnable
 # Its sequenceRunnable
+
 chain = prompt | model | parser
 
 result = chain.invoke("Generative AI")
